@@ -74,6 +74,7 @@ export default async function handle(
 
   await calendar.events.insert({
     calendarId: 'primary',
+    conferenceDataVersion: 1,
     requestBody: {
       summary: `Ignite Call: ${name}`,
       description: observations,
